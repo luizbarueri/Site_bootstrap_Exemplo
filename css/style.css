@@ -1,11 +1,8 @@
 body {
     background-color: #777;
 }
-.menu-principal {
-    height: 20px;
-}
 .navbar {
-    background-color: rgb(193, 196, 189);
+    background-color: rgb(177, 141, 63);
 }
 
 .quem-somos {
@@ -14,13 +11,13 @@ body {
 }
 
 .margin {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     padding-top: 10px;
 }
 
 .parceiros {
     color: #eee;
-    background-color: indigo;
+    background-color: rgb(142, 127, 153);
 }
 
 .servicos {
