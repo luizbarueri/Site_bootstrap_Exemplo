@@ -1,0 +1,57 @@
+<input type="hidden" #selection>
+  
+    <div class="card-container">
+      <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Produtos</span>
+      </button>
+  
+      <button class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Micro-ondas</span>
+      </button>
+  
+      <button class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Lavadoras</span>
+      </button>
+  
+      <button class="card card-small" (click)="selection.value = 'dependency'" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Refrigeradores</span>
+      </button>
+  
+      <button class="card card-small" (click)="selection.value = 'test'" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Automação</span>
+      </button>
+  
+      <button class="card card-small" (click)="selection.value = 'build'" tabindex="0">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Informática</span>
+      </button>
+    </div>
+  
+    <!-- Terminal -->
+    <div class="terminal" [ngSwitch]="selection.value">
+        <pre *ngSwitchDefault>Tabela de produtos em manutenção:
+            <table border = 1>
+                <tr><th>Nome     </th><th>Descrição</th></tr>
+                <tr><td>NroOS    </td><td>{{produtos.nroos }}</td></tr>
+                <tr><td>Cliente  </td><td>{{ produtos.cliente }}</td></tr>
+                <tr><td>Produto  </td><td>{{ produtos.produto }}</td></tr>
+                <tr><td>Marca    </td><td>{{ produtos.marca }}</td></tr>
+                <tr><td>Modelo   </td><td>{{ produtos.modelo }}</td></tr>
+                <tr><td>Defeito Reclamado </td><td>{{ produtos.defeitoReclamado }}</td></tr>
+                <tr><td>Solução  </td><td>{{ produtos.solucao }}</td></tr>
+                <tr><td>Status   </td><td>{{ produtos.status }}</td></tr>
+            </table>
+
+        </pre>
+        <pre *ngSwitchCase="'material'">Manutenção de Micro-ondas</pre>
+        <pre *ngSwitchCase="'pwa'">Manutenção de Lavadoras</pre>
+        <pre *ngSwitchCase="'dependency'">Manutenção de Refrigeradores & Filtros</pre>
+        <pre *ngSwitchCase="'test'">Micro-chaves, paineis, controladores, arduino</pre>
+        <pre *ngSwitchCase="'build'">CPU, Desktop, Notebook, impressoras</pre>
+    </div>
+  
