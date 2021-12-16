@@ -1,0 +1,10 @@
+{
+    "login":[
+        {
+            "id":1,
+            "usuario": "Luiz",
+            "email": "luizbarueri@gmail.com",
+            "senha":"1234"
+        }
+    ]
+}

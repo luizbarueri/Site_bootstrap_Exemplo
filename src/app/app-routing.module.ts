@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BackendComponent } from './backend/backend.component';
 import { ContatoComponent } from './contato/contato.component';
 import { HomeComponent } from './home/home.component';
 import { MapaComponent } from './mapa/mapa.component';
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: "sobre",
     component: SobreComponent
+  },
+  {
+    path: "backend",
+    component: BackendComponent
   }
 ];
 

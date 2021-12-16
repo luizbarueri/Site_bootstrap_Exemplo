@@ -1,1 +1,26 @@
-<p>sobre works!</p>
+<section id="sobre">
+    <div class="container-fluid quem-somos text-center margin">
+        <div class="row" text-center>
+            <div class="col-lg-12">
+                <h1 class="margin">Sobre</h1>
+                <img src="../assets/images/luiz-eletricista.jpg" alt="Gatos" class="rounded-circle" width="25%">
+                <h3>Somos prestadores de serviços de eletroeletrônicos, atendendimento residencial, comercial e pequenas empresas. </h3>
+            </div>
+        </div>
+        <input type="hidden" #selection>
+
+        <div class="card-container">
+            <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+              <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              <span>Telefone</span>
+            </button>
+        
+            <button class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+              <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              <span>(11) 93005-9542</span>
+            </button>
+        </div>    
+    </div>
+   
+
+</section>

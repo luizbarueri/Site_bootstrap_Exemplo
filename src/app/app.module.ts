@@ -8,6 +8,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { ServicoComponent } from './servico/servico.component';
 import { MapaComponent } from './mapa/mapa.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { BackendComponent } from './backend/backend.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SobreComponent } from './sobre/sobre.component';
     ContatoComponent,
     ServicoComponent,
     MapaComponent,
-    SobreComponent
+    SobreComponent,
+    BackendComponent
   ],
   imports: [
     BrowserModule,
