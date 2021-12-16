@@ -9,6 +9,10 @@ import { SobreComponent } from './sobre/sobre.component';
 
 const routes: Routes = [
   {
+    path: "",
+    component: HomeComponent
+  },
+  {
     path: "home",
     component: HomeComponent
   },
@@ -38,4 +42,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {  }

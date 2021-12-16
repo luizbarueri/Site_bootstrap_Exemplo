@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   textoLogo = {frase:'Saiba mais sobre nossos serviços...'};
   login = {usuario: 'Luiz', senha: '1234'}
+
 }
+
