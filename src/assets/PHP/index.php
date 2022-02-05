@@ -1,7 +1,7 @@
 <?php 
  require_once 'classe-pessoa.php';
- //$p = new Pessoa("4006896_luizbarueri","localhost","root","");
- $p = new Pessoa("4006896_luizbarueri","fdb33.awardspace.net","4006896_luizbarueri","progtec2012");
+ //$p = new Pessoa("luizbarueri","localhost","root","");
+ $p = new Pessoa("userxxxxxxxx","hostxxxxxxxx","bdxxxxxxxx","senhaxxxxxxxx");
 ?>
 
 <!DOCTYPE html>
